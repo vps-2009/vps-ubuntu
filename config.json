@@ -1,0 +1,28 @@
+{
+    "port": 28265,
+    "bind_address": "0.0.0.0",
+    "username": "",
+    "password": "",
+    "max_connections": 1000,
+    "buffer_size": 8192,
+    "timeout": 30,
+    "log_level": "INFO",
+    "ngrok": {
+        "enabled": false,
+        "token": "",
+        "region": "us"
+    },
+    "upstream_proxy": {
+        "enabled": false,
+        "host": "",
+        "port": 0,
+        "username": "",
+        "password": "",
+        "type": "socks5"
+    },
+    "protocols": {
+        "socks5": true,
+        "socks4": true,
+        "http": true
+    }
+}
