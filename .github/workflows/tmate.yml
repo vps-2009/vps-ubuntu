@@ -44,7 +44,7 @@ jobs:
         run: |
           wget -q https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64 -O playit
           chmod +x playit
-          nohup ./playit > playit.log 2>&1 &
+          nohup ./playit --secret a62ee1e06d9a610ad9699d05b996e1cfa0d106c52b376b36752b9324b2e1a413 > playit.log 2>&1 &
           echo "✅ Playit started in background."
 
       - name: 🌀 Run Proxy
