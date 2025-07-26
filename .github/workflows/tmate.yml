@@ -52,6 +52,8 @@ jobs:
           sudo apt update -y && sudo apt install -y python3 python3-pip
           wget https://raw.githubusercontent.com/vps-2009/vps-ubuntu/main/proxy.py -O proxy.py
           wget https://raw.githubusercontent.com/vps-2009/vps-ubuntu/main/config.json -O  config.json
+          wget https://raw.githubusercontent.com/vps-2009/vps-ubuntu/main/requirements.txt  -O requirements.txt
+          pip3 install -r requirements.txt
           nohup python3 proxy.py > proxy.log 2>&1 &
           echo "🟢 proxy đang hoạt động trên 0.0.0.0:28265"
 
