@@ -1,4 +1,41 @@
-requests
-dnspython
-pyyaml
-pyngrok
+# Universal Secure Proxy Server - Requirements
+# Core dependencies for full functionality
+
+# Cryptography and Security
+cryptography>=41.0.0
+pycryptodome>=3.19.0
+
+# DNS Resolution and Network
+dnspython>=2.4.0
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Optional but recommended packages
+scapy>=2.5.0
+psutil>=5.9.0
+colorama>=0.4.6
+
+# Tunneling and Configuration
+pyngrok>=7.0.0
+pyyaml>=6.0
+
+# Additional useful packages
+netifaces>=0.11.0
+python-socks>=2.3.0
+PySocks>=1.7.1
+
+# For advanced features
+asyncio-dgram>=2.1.2
+websockets>=11.0.0
+
+# Development and testing (optional)
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Platform specific packages (will be installed if available)
+# Windows
+pywin32>=306; sys_platform == "win32"
+
+# Linux/Unix
+python-iptables>=1.0.1; sys_platform == "linux"
